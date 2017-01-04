@@ -33,11 +33,14 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+I had a hard time with the formatting in the beginning. Whenever I ran my app the side would be cut
+off and the labels would not show. This was because I was placing the elements on a iPhone 6s and testing
+on a 5/5s. Instead of moving the version I decided to make it so that the labels would auto adjust for
+any iPhone screen.
 
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright [2017] []
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
