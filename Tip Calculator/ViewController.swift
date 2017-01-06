@@ -7,16 +7,17 @@
 //
 
 import UIKit
+import Foundation
 
 class ViewController: UIViewController {
-
+    
     @IBOutlet weak var billField: UITextField!
-    @IBOutlet weak var tipLabel: UILabel!
-    @IBOutlet weak var totalLabel: UILabel!
-    @IBOutlet weak var tipAmount: UISegmentedControl!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.endEditing(false)
+        
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -30,22 +31,14 @@ class ViewController: UIViewController {
     }
     
     
-   
-    @IBAction func findTip(_ sender: Any) {
-       
-        let tipPercent = [0.15, 0.2, 0.25]
+    @IBAction func billEntered(_ sender: Any) {
         
         let bill = Double(billField.text!) ?? 0
-        var tipMoney = tipAmount.selectedSegmentIndex
+        let defaults = UserDefaults.standard
         
-        if( tipMoney < 0 || tipMoney > 2 ) {
-            tipMoney = 0
-        }
+        defaults.set(bill, forKey: "myBill")
+        defaults.synchronize()
         
-        let tip = bill * tipPercent[tipMoney]
-        let total = bill + tip
-        tipLabel.text = String(format: "$%.2f", tip)
-        totalLabel.text = String(format: "$%.2f", total)
     }
 }
 

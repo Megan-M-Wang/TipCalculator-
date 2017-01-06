@@ -4,7 +4,7 @@ Tip Calculator is a tip calculator application for iOS.
 
 Submitted by: Megan
 
-Time spent: 2 hours spent in total
+Time spent: 4.5 hours spent in total
 
 ## User Stories
 
@@ -14,30 +14,34 @@ The following **required** functionality is complete:
 * [x] Settings page to change the default tip percentage.
 
 The following **optional** features are implemented:
-* [ ] UI animations
-* [ ] Remembering the bill amount across app restarts (if <10mins)
-* [ ] Using locale-specific currency and currency thousands separators.
-* [ ] Making sure the keyboard is always visible and the bill amount is always the first responder. This way the user doesn't have to tap anywhere to use this app. Just launch the app and start typing.
+* [x] App is divided between screens 
+* [x] Data is stored using UserDefaults and persists between pages allowing for a last used
+      tip amount feature
+* [x] Recommendation system implemented so that users can decide tip amount based on service
+* [x] App can be used on any iPhone device as the elements auto-adjust to fit any screen
 
-The following **additional** features are implemented:
-
-- [x] App can be used on any iPhone device as the elements auto-adjust to fit any screen
 
 ## Video Walkthrough 
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/jb4KtoF.gifv' Walkthrough' width='' alt='Video Walkthrough' />
+<img src='http://i.imgur.com/65MYQkf.gif' Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+For the original app, I had a hard time with the formatting in the beginning. The XCODE simulation would
+show the display being cut off, which was not consistant with the storyboard image. This was because
+there was a discrepency between the version I was designing on and testing on, which inspired me to format
+the features so that they would scale to any iPhone screen size. After I finished the basic app I wanted
+to add a feature to help answer the question of how much to tip -- something that I struggle with. This
+is why I introduced the recommendation feature, which allows users to select tip amount by considering
+the service on a 1-5 star rating system instead of a simple percent, if they so choose. 
 
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright @2017 Megan Marie Wang
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
