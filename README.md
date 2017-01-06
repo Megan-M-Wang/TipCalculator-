@@ -4,7 +4,7 @@ Tip Calculator is a tip calculator application for iOS.
 
 Submitted by: Megan
 
-Time spent: 4.5 hours spent in total
+Time spent: 6 hours spent in total
 
 ## User Stories
 
@@ -15,8 +15,10 @@ The following **required** functionality is complete:
 
 The following **optional** features are implemented:
 * [x] App is divided between screens 
-* [x] Data is stored using UserDefaults and persists between pages allowing for a last used
+* [x] Keyboard automatically engages when the app starts up on the bill enter page 
+* [x] Data is stored using UserDefaults and persists between pages and uses allowing for a last used
       tip amount feature
+* [x] Users can also specify a tip percentage outside the provided options
 * [x] Recommendation system implemented so that users can decide tip amount based on service
 * [x] App can be used on any iPhone device as the elements auto-adjust to fit any screen
 
@@ -25,7 +27,7 @@ The following **optional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/65MYQkf.gif' Walkthrough' width='' alt='Video Walkthrough' />
+<img src='http://i.imgur.com/Ike8Dgq.gif' 'Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
@@ -41,7 +43,7 @@ the service on a 1-5 star rating system instead of a simple percent, if they so 
 
 ## License
 
-    Copyright @2017 Megan Marie Wang
+Copyright @2017 Megan Wang
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
